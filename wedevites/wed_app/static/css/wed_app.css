@@ -1,0 +1,261 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+  margin-top: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    top: 20%;
+  z-index: -2;
+}
+
+#demo{
+    margin-top: 0px;
+}
+
+.btn{
+
+      background-color: #4A1B0B;
+      border: none;
+      color: white;
+      padding: 6px 22px;
+      text-align: center;
+      font-size: 13px;
+      margin: 2px 2px;
+      opacity: 1;
+      transition: 0.3s;
+}
+.btn {border-radius: 12px;}
+.btn:hover {opacity: 0.6}
+.a{
+    text-align: center;
+}
+
+.wedcontent{
+    width: 700px ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.rsvpbottom{
+    font-size: 15px;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+.ourstory{
+    text-align: center;
+    margin:auto;
+    width: 50em;
+
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+
+}
+.carousel-inner{
+  position: absolute;
+  min-width: 100%;
+  height: 600px;
+}
+
+.banneritem{
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 600px;
+}
+
+.rsvpbanneritem{
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 700px;
+}
+
+.theparents{
+background-color: #F4C0AF;
+
+}
+.title{
+
+font-family: 'Great Vibes', cursive;
+font-size: 80px;
+color: #4A1B0B;
+
+}
+.montfont{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+
+}
+.count_down{
+    font-weight:900;
+
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ourstorycolor{
+    color: #4A1B0B;
+}
+
+.boldfont{
+    font-weight: bolder;
+
+}
+.name{
+    margin-top: -30px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+
+}
+
+.secondarysponsors{
+    background-color: #F4C0AF;
+}
+
+
+.giftfont{
+font-size: 18px;
+
+}
+.banneritem, .item, .rsvpbanneritem{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -o-background-position: center;
+    background-position: center;
+
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+
+  .a{
+      text-align: center;
+      margin: auto;
+  }
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
